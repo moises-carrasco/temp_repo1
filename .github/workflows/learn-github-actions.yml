@@ -12,3 +12,5 @@ jobs:
             echo "MYVAR2=123" >> $GITHUB_ENV
       - name: New step
         run: echo $MYVAR $MYVAR2 $GITHUB_ACTOR
+      - name: run a script
+        run: ../test01.py
