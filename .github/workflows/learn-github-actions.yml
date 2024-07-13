@@ -9,7 +9,7 @@ jobs:
       - name: Defining variables
         run: |
             echo "MYVAR=holaaaa" >> $GITHUB_ENV
-            echo "MYVAR2=World" >> $GITHUB_ENV
+            echo "MYVAR2=kkkk" >> $GITHUB_ENV
       - name: New step
         run: echo $MYVAR $MYVAR2 $GITHUB_ACTOR
       - name: make the script executable
