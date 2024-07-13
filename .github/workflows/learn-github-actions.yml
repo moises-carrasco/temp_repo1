@@ -12,7 +12,7 @@ jobs:
             echo "MYVAR2=kkkk" >> $GITHUB_ENV
       - name: New step
         run: echo $MYVAR $MYVAR2 $GITHUB_ACTOR
-      - name: make the script executable
-        run: chmod +x ./script01.sh
+    #   - name: make the script executable
+    #     run: chmod +x ./script01.sh
       - name: run a script
-        run: ./script01.sh
+        run: bash ./script01.sh
