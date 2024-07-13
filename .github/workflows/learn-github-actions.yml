@@ -7,9 +7,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Defining variables
-        run: echo "Defining variables"
-        env:
-            MYVAR: hola
-            MYVAR2: 234
+        run: |
+            echo "MYVAR=hola" >> $GITHUB_ENV
+            echo "MYVAR2=123" >> $GITHUB_ENV
       - name: New step
         run: echo $MYVAR $MYVAR2
