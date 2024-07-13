@@ -13,4 +13,4 @@ jobs:
       - name: New step
         run: echo $MYVAR $MYVAR2 $GITHUB_ACTOR
       - name: run a script
-        run: ../../script01.sh
+        run: ./script01.sh
