@@ -11,4 +11,4 @@ jobs:
             echo "MYVAR=hola" >> $GITHUB_ENV
             echo "MYVAR2=123" >> $GITHUB_ENV
       - name: New step
-        run: echo $MYVAR $MYVAR2
+        run: echo $MYVAR $MYVAR2 $GITHUB_ACTOR
